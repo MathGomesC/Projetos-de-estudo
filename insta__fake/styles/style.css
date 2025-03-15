@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-principal:#000000;
+    --cor-texto-principal:#fdfefe;
+    --cor-secundaria-azul:#0069ad;
+    --cor-links:#0095f6;
+    --cor-terciaria-cinza:#121212;
+    --fonte-principal:"Roboto", sans-serif;
+    --cor-linhas-principais:#555555;
+    --cor-botao-hover:#1877f2;
+    --cor-botao-padrao:#0095f6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Instagram__Login{
+    margin-top: 2rem;
+    text-align: center;
+    width: 350px;
+}
+
+.Instagram__Login__Imagem{
+    height: 55px;
+    margin:44px 50px 30px 50px;
+}
+
+.Instagram__Login__Inputs{
+    text-align: center;
+}
+
+.Instagram__Login__Inputs input{
+    background-color: var(--cor-terciaria-cinza);
+    padding:10px 60px 10px 7px;
+    margin:3px;
+    border:1px solid var(--cor-linhas-principais);
+    border-radius:3px;
+    color:var(--cor-texto-principal)
+}
+
+.Instagram__Login__Inputs input::placeholder{
+    color: var(--cor-texto-principal);
+    text-align: left;
+    font-size:12px;
+    opacity: 50%;
+}
+
+button{
+    margin: 10px 0;
+    padding:8px 100px;
+    border-radius: 10px;
+    background-color: var(--cor-botao-padrao);
+    border: 1px solid var(--cor-botao-padrao);
+    color: var(--cor-texto-principal);
+    font-weight:500;
+    font-family: var(--fonte-principal);
+    font-size:13.6px;
+}
+button:hover{
+    background-color: var(--cor-botao-hover);
+    border: 1px solid var(--cor-botao-hover);
+    cursor: pointer;
+}
+
+.Instagram__Login__Separador{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 40px;
+    align-items: center;
+    font-size: 14px;
+}
+.Instagram__Login__Separador::before ,
+.Instagram__Login__Separador::after{
+    content: "";
+    border-top: 1px solid var(--cor-linhas-principais);
+    flex:1;
+    opacity: 50%;
+}
+
+.Instagram__Login__Separador span{
+    color:var(--cor-texto-principal);
+    margin:15px;
+    font-family: var(--fonte-principal);
+}
+
+.Instagram__Login__Links-Cadastrais{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px 30px;
+}
+
+.Instagram__Login__Links-Cadastrais__Facebook{
+    padding: 15px;
+}
+
+.Instagram__Login__Links-Cadastrais__Facebook img{
+    height: 20px;
+}
+
+.Instagram__Login__Links-Cadastrais__Facebook a{
+    text-decoration: none;
+    color: var(--cor-links);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size:13.6px ;
+    position: relative;
+    bottom:5px;
+    right: -2px;
+}
+
+.Instagram__Login__Links-Cadastrais__Facebook a:hover{
+    color: var(--cor-texto-principal);
+}
+
+.Instagram__Login__Links-Cadastrais__Esqueceu-Senha{
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+    font-size: 11.6px;
+    position: relative;
+    right: -5px;
+}
+
+.Instagram__Obter-app{
+    display: flex;
+    flex-direction: column;
+}
+
+.Instagram__Obter-app__Criar-conta{
+    color:var(--cor-texto-principal);
+    text-align: center;
+    padding: 25px 61px;
+    margin-top: 10px;
+
+}
+
+.Instagram__Obter-app__Criar-conta a{
+    text-decoration: none;
+    color:var(--cor-links);
+    font-family: var(--fonte-principal);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Instagram__Obter-app__Obter{
+    color:var(--cor-texto-principal);
+    text-align: center;
+    margin:10px 0 10px;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+.Instagram__Obter-app__Baixar-App{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 25px;
+}
+
+.Instagram__Obter-app__Baixar-App img{
+    height:40px;
+    margin:5px
+}
+
+.Instagram__Obter-app__Baixar-App img:hover{
+    cursor: pointer;
+}
+
+.Instagram__Footer{
+    display: flex;
+    border:6px solid;
+    flex-wrap: wrap;
+    gap:11px;
+    width:100%;
+    justify-content: center;
+    padding-bottom: 5px;
+    height: 110px;
+    align-items: end;
+    margin-top: 35px;
+}
+
+.Instagram__Footer a{
+    color:var(--cor-texto-principal);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+}
+
+.Instagram__Footer a:hover{
+    text-decoration:underline;
+}
+
+.Instagram__Footer__Comercial{
+    display:flex;
+    height: auto;
+    height:60px;
+    width: 100%;
+    justify-content: center;
+}
+
+.Instagram__Footer__Comercial p,
+.Instagram__Footer__Comercial__Idiomas{
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.Instagram__Footer__Comercial__Idiomas{
+    height: 18px;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-principal);
+    border: none;
+}
+option{
+    background-color:var(--cor-texto-principal);
+    color: var(--cor-principal);
+}
+
+@media (min-width:451px){
+    .Instagram__Login{
+        border:1px solid var(--cor-texto-principal);
+    }
+
+    .Instagram__Obter-app__Criar-conta{
+        border:1px solid var(--cor-texto-principal);
+    }
+
+    .Instagram__Obter-app__Criar-conta{
+        padding: 25px 81px;
+    }
+}
+
+@media (min-width:953px){
+    .Instagram__Login{
+        margin-top: 3rem;
+    }
+}
