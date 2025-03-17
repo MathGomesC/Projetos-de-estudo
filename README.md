@@ -1,1 +1,1 @@
-Repositorio destinado a proojetos pessoais de estudo
+Repositorio destinado a projetos pessoais de estudo
